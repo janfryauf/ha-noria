@@ -1,0 +1,230 @@
+[
+  {
+    "id": 3040,
+    "name": "redacted-4d23970c",
+    "user_id": 57101,
+    "token_id": 3503,
+    "state": null,
+    "device_type_id": 26,
+    "device_group_id": null,
+    "created_at": "2024-10-29T12:09:45.000+01:00",
+    "updated_at": "2026-10-01T10:55:15.000+02:00",
+    "paid": true,
+    "input": 0,
+    "unpaired": false,
+    "wmbus_serial": "",
+    "protocol_url": null,
+    "serial_number": "redacted-60c2d866",
+    "tariff": null,
+    "device_info": {
+      "last_message_at": "2026-10-01T19:26:00.000+02:00",
+      "reference_pump_time": null,
+      "water_meter_number": null,
+      "power_meter_number": null,
+      "manufacturer_id": null,
+      "meter_type_id": null,
+      "meter_flow_id": null,
+      "rssi": 0,
+      "flx_period_count": null,
+      "unpaired_category": "undefined",
+      "last_event_id": 23912837,
+      "successfully_assembled": true,
+      "human_status_en": null,
+      "activation_event_id": 7437152,
+      "wmbus_scan_started_event_id": null,
+      "wmbus_scan_finished_event_id": 23912837,
+      "meter_number": null,
+      "old_device_number": null,
+      "max_total_time": 11341622,
+      "max_switch_count": 65037,
+      "max_average_pump_time": 849.6,
+      "max_reference_pump_time": 469.5
+    },
+    "user_info": {
+      "device_user_contact": "redacted-07f8d9c5",
+      "send_alarms": false,
+      "send_reports": false,
+      "alarms_email": "redacted-8d6c9b40",
+      "reports_email": "redacted-8d6c9b40",
+      "human_status": null
+    },
+    "device_address": {
+      "street": "redacted-249b9c18",
+      "city": "",
+      "zip": "",
+      "country": null,
+      "location_string": "",
+      "location_number": null,
+      "latitude": "redacted-acf938f6",
+      "longitude": "redacted-9d2ee08b"
+    },
+    "token": {
+      "id": 3503,
+      "note": "redacted-ba173f93",
+      "device_type_id": 26,
+      "noria_id": "redacted-b4c46250",
+      "expiration_months": 12,
+      "created_at": "2024-04-21T11:57:13.000+02:00",
+      "updated_at": "2026-09-15T12:00:18.000+02:00",
+      "pac": "redacted-87f001a5",
+      "fw": 12106,
+      "sw": 63784,
+      "token_test": null,
+      "token_expiration": "2027-09-30",
+      "token_listing_id": "redacted-e43af9bd",
+      "user_id": 57101,
+      "deleted_at": null,
+      "last_scan_mask": "0",
+      "extend_subscription": true,
+      "paid": true,
+      "token_activation_time": "2024-10-24T14:25:00.000+02:00",
+      "com_profile": 0,
+      "last_sequence": 39235,
+      "tx_hw": 1,
+      "tx_sw": 10,
+      "config_number": null,
+      "device_type": {
+        "id": 26,
+        "name": "TLK P4-NBr",
+        "active": true,
+        "created_at": "2023-09-06T12:51:11.000+02:00",
+        "updated_at": "2026-08-28T16:29:09.000+02:00",
+        "parse_method": "multi_tlakan",
+        "price_czk": "350.41",
+        "price_eur": "14.5",
+        "pump_count": 1,
+        "has_downlink": true,
+        "fw": 12106,
+        "sw": 63784,
+        "protocol": "lte",
+        "input_count": 5,
+        "order_servis_name": "TLAKAN-P4",
+        "sc_certificate": "",
+        "sc_type_id": "",
+        "sc_prefix": "",
+        "s3": null,
+        "image": {
+          "url": "/uploads/device_type/image/26/1C_P4.png",
+          "big": {
+            "url": "/uploads/device_type/image/26/big_1C_P4.png"
+          },
+          "medium": {
+            "url": "/uploads/device_type/image/26/medium_1C_P4.png"
+          },
+          "small": {
+            "url": "/uploads/device_type/image/26/small_1C_P4.png"
+          }
+        },
+        "synchronized": false,
+        "month_price_czk": "29.2",
+        "month_price_eur": "1.2",
+        "cs_label": "TLAKAN SMART pro jedno čerpadlo",
+        "sk_label": "",
+        "en_label": "TLAKAN SMART for one pump",
+        "de_label": "",
+        "exec_type": "async",
+        "units": "",
+        "menu_category": "undefined",
+        "graph_color": null,
+        "battery_powered": false,
+        "ack_all_uplink": false,
+        "hot_type_image": {
+          "url": null,
+          "big": {
+            "url": null
+          },
+          "medium": {
+            "url": null
+          },
+          "small": {
+            "url": null
+          }
+        },
+        "name_cannot_be_changed": false
+      }
+    },
+    "device_type": {
+      "id": 26,
+      "name": "TLK P4-NBr",
+      "active": true,
+      "created_at": "2023-09-06T12:51:11.000+02:00",
+      "updated_at": "2026-08-28T16:29:09.000+02:00",
+      "parse_method": "multi_tlakan",
+      "price_czk": "350.41",
+      "price_eur": "14.5",
+      "pump_count": 1,
+      "has_downlink": true,
+      "fw": 12106,
+      "sw": 63784,
+      "protocol": "lte",
+      "input_count": 5,
+      "order_servis_name": "TLAKAN-P4",
+      "sc_certificate": "",
+      "sc_type_id": "",
+      "sc_prefix": "",
+      "s3": null,
+      "image": {
+        "url": "/uploads/device_type/image/26/1C_P4.png",
+        "big": {
+          "url": "/uploads/device_type/image/26/big_1C_P4.png"
+        },
+        "medium": {
+          "url": "/uploads/device_type/image/26/medium_1C_P4.png"
+        },
+        "small": {
+          "url": "/uploads/device_type/image/26/small_1C_P4.png"
+        }
+      },
+      "synchronized": false,
+      "month_price_czk": "29.2",
+      "month_price_eur": "1.2",
+      "cs_label": "TLAKAN SMART pro jedno čerpadlo",
+      "sk_label": "",
+      "en_label": "TLAKAN SMART for one pump",
+      "de_label": "",
+      "exec_type": "async",
+      "units": "",
+      "menu_category": "undefined",
+      "graph_color": null,
+      "battery_powered": false,
+      "ack_all_uplink": false,
+      "hot_type_image": {
+        "url": null,
+        "big": {
+          "url": null
+        },
+        "medium": {
+          "url": null
+        },
+        "small": {
+          "url": null
+        }
+      },
+      "name_cannot_be_changed": false
+    },
+    "device_params": [
+      {
+        "id": 6613,
+        "device_id": 3040,
+        "param_type": "seq_alarm",
+        "created_at": "2024-10-29T12:09:45.000+01:00",
+        "updated_at": "2024-10-29T12:09:45.000+01:00",
+        "val_i": null,
+        "val_f": null,
+        "val_s": null,
+        "val_d": null
+      },
+      {
+        "id": 6614,
+        "device_id": 3040,
+        "param_type": "pump_times",
+        "created_at": "2024-10-29T12:09:45.000+01:00",
+        "updated_at": "2026-03-19T15:29:14.000+01:00",
+        "val_i": 0,
+        "val_f": null,
+        "val_s": null,
+        "val_d": null
+      }
+    ]
+  }
+]

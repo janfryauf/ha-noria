@@ -1,0 +1,106 @@
+{
+  "entity": {
+    "sensor": {
+      "pumping_time": {
+        "default": "mdi:timer-outline"
+      },
+      "pumping_time_pump": {
+        "default": "mdi:timer-outline"
+      },
+      "pump_cycles": {
+        "default": "mdi:counter"
+      },
+      "pump_cycles_pump": {
+        "default": "mdi:counter"
+      },
+      "pump_failure_count": {
+        "default": "mdi:pump-off"
+      },
+      "pump_failure_count_pump": {
+        "default": "mdi:pump-off"
+      },
+      "emergency_level_count": {
+        "default": "mdi:waves-arrow-up"
+      },
+      "emergency_level_count_pump": {
+        "default": "mdi:waves-arrow-up"
+      },
+      "probe_sensitivity": {
+        "default": "mdi:tune-variant"
+      },
+      "probe_sensitivity_pump": {
+        "default": "mdi:tune-variant"
+      },
+      "pumping_time_last_interval": {
+        "default": "mdi:timer-sand"
+      },
+      "pumping_time_last_interval_pump": {
+        "default": "mdi:timer-sand"
+      },
+      "last_reading": {
+        "default": "mdi:clock-check-outline"
+      },
+      "last_reading_pump": {
+        "default": "mdi:clock-check-outline"
+      },
+      "average_pump_time": {
+        "default": "mdi:timer-cog-outline"
+      },
+      "average_pump_time_pump": {
+        "default": "mdi:timer-cog-outline"
+      },
+      "reference_pump_time": {
+        "default": "mdi:timer-check-outline"
+      },
+      "reference_pump_time_pump": {
+        "default": "mdi:timer-check-outline"
+      },
+      "active_alarms": {
+        "default": "mdi:alert"
+      },
+      "last_message": {
+        "default": "mdi:message-processing-outline"
+      },
+      "subscription_expiration": {
+        "default": "mdi:calendar-clock"
+      }
+    },
+    "binary_sensor": {
+      "pump_failure": {
+        "default": "mdi:pump-off"
+      },
+      "pump_failure_pump": {
+        "default": "mdi:pump-off"
+      },
+      "pump_damage_risk": {
+        "default": "mdi:alert-octagon-outline"
+      },
+      "pump_damage_risk_pump": {
+        "default": "mdi:alert-octagon-outline"
+      },
+      "emergency_level": {
+        "default": "mdi:waves-arrow-up"
+      },
+      "emergency_level_float_error": {
+        "default": "mdi:waves-arrow-up"
+      },
+      "emergency_level_probe_error": {
+        "default": "mdi:waves-arrow-up"
+      },
+      "probe_contamination": {
+        "default": "mdi:water-alert-outline"
+      },
+      "za_switch": {
+        "default": "mdi:electric-switch"
+      }
+    },
+    "event": {
+      "alarm": {
+        "default": "mdi:alert-circle-outline"
+      },
+      "status": {
+        "default": "mdi:information-outline"
+      }
+    }
+  }
+}

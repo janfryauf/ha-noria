@@ -1,0 +1,29 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  hassfest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: home-assistant/actions/hassfest@master
+
+  hacs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hacs/action@main
+        with:
+          category: integration
+          # The icon ships in custom_components/noria/brand/ (served locally by HA 2026.x),
+          # not in home-assistant/brands. Try removing this once CI runs on GitHub; keep it
+          # if HACS still looks only at the brands repo.
+          ignore: brands

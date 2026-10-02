@@ -1,0 +1,251 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Noria Online Monitoring",
+        "description": "Sign in with your Noria Online Monitoring (NOM) API account. The integration only reads data; it never sends commands to your devices.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        },
+        "data_description": {
+          "username": "The account you use for nom.noriatechnology.cz.",
+          "password": "The password of that account."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate",
+        "description": "The password for {username} is no longer accepted. Enter the current one.",
+        "data": {
+          "password": "Password"
+        },
+        "data_description": {
+          "password": "The current password of the NOM account."
+        }
+      },
+      "reconfigure": {
+        "title": "Update credentials",
+        "description": "Change the credentials of this NOM account.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        },
+        "data_description": {
+          "username": "Must be the same account as before.",
+          "password": "The current password of the NOM account."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Noria Online Monitoring",
+      "invalid_auth": "Invalid username or password",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This account is already configured",
+      "reauth_successful": "Re-authentication was successful",
+      "reconfigure_successful": "Re-configuration was successful",
+      "wrong_account": "These credentials belong to a different account"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "pumping_time": {
+        "name": "Pumping time"
+      },
+      "pumping_time_pump": {
+        "name": "Pump {pump} pumping time"
+      },
+      "pump_cycles": {
+        "name": "Pump cycles"
+      },
+      "pump_cycles_pump": {
+        "name": "Pump {pump} cycles"
+      },
+      "pump_failure_count": {
+        "name": "Pump failure count"
+      },
+      "pump_failure_count_pump": {
+        "name": "Pump {pump} failure count"
+      },
+      "emergency_level_count": {
+        "name": "Emergency level count"
+      },
+      "emergency_level_count_pump": {
+        "name": "Pump {pump} emergency level count"
+      },
+      "probe_sensitivity": {
+        "name": "Probe sensitivity"
+      },
+      "probe_sensitivity_pump": {
+        "name": "Pump {pump} probe sensitivity"
+      },
+      "pumping_time_last_interval": {
+        "name": "Pumping time in last interval"
+      },
+      "pumping_time_last_interval_pump": {
+        "name": "Pump {pump} pumping time in last interval"
+      },
+      "last_reading": {
+        "name": "Last reading"
+      },
+      "last_reading_pump": {
+        "name": "Pump {pump} last reading"
+      },
+      "average_pump_time": {
+        "name": "Average pump time"
+      },
+      "average_pump_time_pump": {
+        "name": "Pump {pump} average pump time"
+      },
+      "reference_pump_time": {
+        "name": "Reference pump time"
+      },
+      "reference_pump_time_pump": {
+        "name": "Pump {pump} reference pump time"
+      },
+      "active_alarms": {
+        "name": "Active alarms"
+      },
+      "last_message": {
+        "name": "Last message"
+      },
+      "subscription_expiration": {
+        "name": "Subscription expiration"
+      }
+    },
+    "binary_sensor": {
+      "pump_failure": {
+        "name": "Pump failure"
+      },
+      "pump_failure_pump": {
+        "name": "Pump {pump} failure"
+      },
+      "pump_damage_risk": {
+        "name": "Pump damage risk"
+      },
+      "pump_damage_risk_pump": {
+        "name": "Pump {pump} damage risk"
+      },
+      "emergency_level": {
+        "name": "Emergency level"
+      },
+      "emergency_level_float_error": {
+        "name": "Emergency level (float error)"
+      },
+      "emergency_level_probe_error": {
+        "name": "Emergency level (probe contamination)"
+      },
+      "probe_contamination": {
+        "name": "Probe contamination"
+      },
+      "za_switch": {
+        "name": "ZA switch"
+      }
+    },
+    "event": {
+      "alarm": {
+        "name": "Alarm",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "emergency_level": "Emergency level",
+              "emergency_level_float_error": "Emergency level – float error",
+              "emergency_level_probe_error": "Emergency level – probe contamination",
+              "probe_contamination": "Probe contamination",
+              "pump_damage_risk": "Pump damage risk",
+              "pump_failure": "Pump failure",
+              "za_switch": "ZA switch on",
+              "unknown_alarm": "Unknown alarm"
+            }
+          },
+          "phase": {
+            "name": "Phase",
+            "state": {
+              "started": "Started",
+              "ended": "Ended"
+            }
+          },
+          "started": {
+            "name": "Started"
+          },
+          "ended": {
+            "name": "Ended"
+          },
+          "duration_s": {
+            "name": "Duration (s)"
+          },
+          "code": {
+            "name": "Code"
+          },
+          "alarm_id": {
+            "name": "Alarm ID"
+          },
+          "pump_number": {
+            "name": "Pump"
+          },
+          "delayed": {
+            "name": "Delayed",
+            "state": {
+              "true": "Yes",
+              "false": "No"
+            }
+          }
+        }
+      },
+      "status": {
+        "name": "Status",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "alarm_counters_reset": "Alarm counters reset",
+              "cleaning": "Cleaning",
+              "daily_message_limit": "Daily message limit reached",
+              "downlink_ok": "Downlink OK",
+              "drained_after_timeout": "Drained to minimum level (stopped after timeout)",
+              "drained_by_float": "Drained to minimum level (stopped by float)",
+              "manual_pumping": "Manual pumping",
+              "nb_iot_reregistration": "NB-IoT re-registration",
+              "power_connected": "Power connected",
+              "probe_sensitivity_changed": "Probe sensitivity changed remotely",
+              "remote_horn_off": "Horn turned off remotely",
+              "remote_horn_on": "Horn turned on remotely",
+              "remote_pump_refused": "Pump cannot be switched on remotely",
+              "unknown_status": "Unknown status"
+            }
+          },
+          "occurred": {
+            "name": "Occurred"
+          },
+          "code": {
+            "name": "Code"
+          },
+          "alarm_id": {
+            "name": "Alarm ID"
+          },
+          "pump_number": {
+            "name": "Pump"
+          },
+          "delayed": {
+            "name": "Delayed",
+            "state": {
+              "true": "Yes",
+              "false": "No"
+            }
+          }
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "cannot_connect": {
+      "message": "Cannot connect to Noria Online Monitoring"
+    },
+    "invalid_auth": {
+      "message": "Noria Online Monitoring rejected the credentials"
+    },
+    "rate_limited": {
+      "message": "Noria Online Monitoring is rate limiting requests"
+    }
+  }
+}

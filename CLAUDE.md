@@ -2,7 +2,7 @@
 
 Home Assistant custom integration, distributed through HACS, for **Noria Online Monitoring (NOM)** by Noria Technology (CZ): remote monitoring of pressure-sewer pumping stations (TLAKAN) and water/power meters (WMETER, QI, EMETER) over low-power radio (LTE/NB-IoT, wM-Bus, Sigfox). Owned by @janfryauf.
 
-**Status (2026-10-02)**: v0.1 read-only integration implemented and unit-tested, but not yet run against the live account in HA, and not a git repo yet. The account's only device is a **TLAKAN SMART for one pump** (`TLK P4-NBr`, `multi_tlakan`, LTE). Real data is captured as sanitized fixtures in `tests/fixtures/`.
+**Status (2026-10-02)**: v0.1 read-only integration implemented, unit-tested, and running against the live account in the dev HA, where all sensors report values. Public repo at https://github.com/janfryauf/ha-noria (MIT, branch `main`); CI covers tests, hassfest and HACS validation. Not released yet: the next step is a few days of live running, then v0.1.0 via `/ha-release`. The account's only device is a **TLAKAN SMART for one pump** (`TLK P4-NBr`, `multi_tlakan`, LTE). Real data is captured as sanitized fixtures in `tests/fixtures/`.
 
 ## Code map
 

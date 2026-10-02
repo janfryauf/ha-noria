@@ -23,7 +23,5 @@ jobs:
       - uses: hacs/action@main
         with:
           category: integration
-          # The icon ships in custom_components/noria/brand/ (served locally by HA 2026.x),
-          # not in home-assistant/brands. Try removing this once CI runs on GitHub; keep it
-          # if HACS still looks only at the brands repo.
-          ignore: brands
+          # No `ignore: brands`: the icon ships in custom_components/noria/brand/,
+          # which HA 2026.x serves locally instead of the home-assistant/brands repo.
